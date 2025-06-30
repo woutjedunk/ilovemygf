@@ -13,12 +13,12 @@ interface QuizProps {
 }
 
 const images: string[] = [
-  '/photos/1.JPG',
-  '/photos/2.jpg',
-  '/photos/3.jpg',
-  '/photos/4.jpg',
-  '/photos/5.JPG',
-  '/photos/6.jpg'
+  '/ilovemygf/public/photos/1.JPG',
+  '/ilovemygf/public/photos/2.jpg',
+  '/ilovemygf/public/photos/3.jpg',
+  '/ilovemygf/public/photos/4.jpg',
+  '/ilovemygf/public/photos/5.JPG',
+  '/ilovemygf/public/photos/6.jpg'
 ]
 
 const Quiz = ({ onComplete }: QuizProps) => {
