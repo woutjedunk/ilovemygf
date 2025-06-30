@@ -1,4 +1,10 @@
 import { useEffect, useState } from "react";
+import foto1 from "../photos/1.jpg";
+import foto2 from "../photos/2.jpg";
+import foto3 from "../photos/3.jpg";
+import foto4 from "../photos/4.jpg";  
+import foto5 from "../photos/5.jpg";
+import foto6 from "../photos/6.jpg";
 
 interface Question {
   id: number;
@@ -13,12 +19,12 @@ interface QuizProps {
 }
 
 const images: string[] = [
-  '/photos/1.JPG',
-  '/photos/2.jpg',
-  '/photos/3.jpg',
-  '/photos/4.jpg',
-  '/photos/5.JPG',
-  '/photos/6.jpg'
+  foto1,
+  foto2,
+  foto3,    
+  foto4,
+  foto5,
+  foto6,
 ]
 
 const Quiz = ({ onComplete }: QuizProps) => {
