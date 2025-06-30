@@ -21,7 +21,7 @@ const WelcomeScreen = ({ onNext }: WelcomeScreenProps) => {
             2 jaartjes samen
           </h2>
           <p className="text-2xl text-gray-700 mb-8">
-            {"een kleine collage van leuke momentjes samen :)"}
+            {"een kleine collage van leuke momentjes samen, speciaal voor jou Jaatje :)"}
           </p>
         </div>
         
