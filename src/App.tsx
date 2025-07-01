@@ -2,8 +2,9 @@ import { useState } from 'react'
 import './App.css'
 import Quiz from './components/Quiz'
 import WelcomeScreen from './components/WelcomeScreen'
+import Confirmation from './components/Confirmation'
 
-type Section = 'welcome' | 'quiz' | 'end'
+type Section = 'welcome' | 'confirmation'| 'quiz' | 'end'
 
 function App() {
   const [currentSection, setCurrentSection] = useState<Section>('welcome')
@@ -11,7 +12,9 @@ function App() {
   const renderSection = () => {
     switch (currentSection) {
       case 'welcome':
-        return <WelcomeScreen onNext={() => setCurrentSection('quiz')} />
+        return <WelcomeScreen onNext={() => setCurrentSection('confirmation')} />
+      case 'confirmation':
+        return <Confirmation onYes={() => setCurrentSection('quiz')} />
       case 'quiz':
         return <Quiz onComplete={() => setCurrentSection('end')} />
       case 'end':
