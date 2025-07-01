@@ -91,7 +91,7 @@ const Quiz = ({ onComplete }: QuizProps) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
-    }, 7000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -138,8 +138,8 @@ const Quiz = ({ onComplete }: QuizProps) => {
 
   return !showResults ? (
  
-      <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-rose-100 p-6">
-        <div className="flex flex-col items-center">
+      <div className="min-h-screen bg-gradient-to-br from-pink-100 via-purple-50 to-rose-100 p-6 flex flex-col items-center">
+        <div className="">
           <div className="max-w-2xl mx-auto">
             {/* Progress Bar */}
             <div className="mb-8">
@@ -226,7 +226,7 @@ const Quiz = ({ onComplete }: QuizProps) => {
             </div>
           </div>
         </div>
-        <div className="relative h-[500px]">
+        <div className="relative h-[500px] w-[300px]">
           {images.map((src: string, i: number) => (
               <img
                 key={i}
